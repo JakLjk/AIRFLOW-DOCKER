@@ -1,0 +1,11 @@
+run-init:
+	docker compose up airflow-init
+
+run:
+	docker compose up -d
+
+down:
+	docker compose down
+
+down-clean:
+	docker compose down --volumes --remove-orphans
