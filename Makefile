@@ -1,3 +1,7 @@
+create-airflow-repositiories:
+	mkdir ./dags ./config ./logs ./plugins
+	echo -e "AIRFLOW_UID=$(id -u)" > .env
+
 run-init:
 	docker compose up airflow-init
 
